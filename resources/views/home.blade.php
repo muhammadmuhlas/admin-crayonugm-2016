@@ -17,7 +17,8 @@
             <section id="go-to-welcome" class="main special">
                 <header class="major">
                     <h2>Selamat Datang</h2>
-                    Data Pendaftar tersedia disini<br> <b>Data yang ditampilkan berikut menggunakan opsi tambahan yaitu "WHERE nama !="" GROUP BY nama"</b>
+                    Data Pendaftar tersedia disini<br> <b>Data yang ditampilkan berikut menggunakan opsi tambahan yaitu "WHERE nama !="" AND WHERE telepon != ""</b>
+                    Dikarenakan banyaknya junk data.
                     </p>
                 </header>
             </section>
