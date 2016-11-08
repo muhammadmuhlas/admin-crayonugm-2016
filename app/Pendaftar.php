@@ -9,7 +9,9 @@ class Pendaftar extends Model
 {
     public function getAllPendaftar(){
     	
-    	$data = DB::table('crayonugm.pendaftar')->get();
+    	$data = DB::table('crayonugm.pendaftar')
+		    ->where('nama', '!=', "")
+		    ->get();
 	    return $data;
     }
 }

@@ -46,16 +46,15 @@
                                     <tr>
                                         <td>{{$pendaftar->nama}}</td>
                                         <td>{{$pendaftar->kelamin}}</td>
-                                        <td>{{$pendaftar->umur}}</td>
                                         <td>
-                                            @if($pendaftar->telepon == "1")
+                                            @if($pendaftar->umur == "1")
                                                 Lelaki
                                             @endif
-                                            @if($pendaftar->telepon == "2")
+                                            @if($pendaftar->umur == "2")
                                                 Wanita
                                             @endif
-
                                         </td>
+                                        <td>{{$pendaftar->telepons}}</td>
                                         <td>{{$pendaftar->sekolah}}</td>
                                         <td>{{$pendaftar->alamat}}</td>
                                         <td>{{$pendaftar->kategori}}</td>
