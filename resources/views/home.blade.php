@@ -45,15 +45,15 @@
                                 @foreach($data_pendaftar as $pendaftar)
                                     <tr>
                                         <td>{{$pendaftar->nama}}</td>
-                                        <td>{{$pendaftar->kelamin}}</td>
                                         <td>
-                                            @if($pendaftar->umur == "1")
+                                            @if($pendaftar->kelamin == "1")
                                                 Lelaki
                                             @endif
-                                            @if($pendaftar->umur == "2")
+                                            @if($pendaftar->kelamin == "2")
                                                 Wanita
                                             @endif
                                         </td>
+                                        <td>{{$pendaftar->umur}}</td>
                                         <td>{{$pendaftar->telepon}}</td>
                                         <td>{{$pendaftar->sekolah}}</td>
                                         <td>{{$pendaftar->alamat}}</td>
