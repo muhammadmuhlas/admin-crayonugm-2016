@@ -53,7 +53,15 @@
                                         <td>{{$pendaftar->umur}}</td>
                                     </tr>
                                     <tr>
-                                        <td>{{$pendaftar->telepn}}</td>
+                                        <td>
+                                            @if($pendaftar->telepon == "1")
+                                                Lelaki
+                                            @endif
+                                            @if($pendaftar->telepon == "2")
+                                                Wanita
+                                            @endif
+
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>{{$pendaftar->sekolah}}</td>
