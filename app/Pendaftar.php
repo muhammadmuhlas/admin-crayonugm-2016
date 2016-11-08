@@ -11,7 +11,7 @@ class Pendaftar extends Model
     	
     	$data = DB::table('crayonugm.pendaftar')
 		    ->where('nama', '!=', "")
-		    ->where('telepon', '!=', "")
+		    ->orWhere('telepon', '!=', "")
 		    ->groupBy('nama')
 		    ->get();
 	    return $data;
