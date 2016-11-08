@@ -45,14 +45,8 @@
                                 @foreach($data_pendaftar as $pendaftar)
                                     <tr>
                                         <td>{{$pendaftar->nama}}</td>
-                                    </tr>
-                                    <tr>
                                         <td>{{$pendaftar->kelamin}}</td>
-                                    </tr>
-                                    <tr>
                                         <td>{{$pendaftar->umur}}</td>
-                                    </tr>
-                                    <tr>
                                         <td>
                                             @if($pendaftar->telepon == "1")
                                                 Lelaki
@@ -62,17 +56,9 @@
                                             @endif
 
                                         </td>
-                                    </tr>
-                                    <tr>
                                         <td>{{$pendaftar->sekolah}}</td>
-                                    </tr>
-                                    <tr>
                                         <td>{{$pendaftar->alamat}}</td>
-                                    </tr>
-                                    <tr>
                                         <td>{{$pendaftar->kategori}}</td>
-                                    </tr>
-                                    <tr>
                                         <td>{{$pendaftar->created_at}}</td>
                                     </tr>
                                 @endforeach
