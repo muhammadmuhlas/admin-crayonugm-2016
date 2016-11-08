@@ -54,7 +54,7 @@
                                                 Wanita
                                             @endif
                                         </td>
-                                        <td>{{$pendaftar->telepons}}</td>
+                                        <td>{{$pendaftar->telepon}}</td>
                                         <td>{{$pendaftar->sekolah}}</td>
                                         <td>{{$pendaftar->alamat}}</td>
                                         <td>{{$pendaftar->kategori}}</td>
