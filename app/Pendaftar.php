@@ -10,9 +10,12 @@ class Pendaftar extends Model
     public function getAllPendaftar(){
     	
     	$data = DB::table('crayonugm.pendaftar')
-		    ->where('nama', '!=', "")
-		    ->orWhere('telepon', '!=', "")
+		    ->where([
+			    ['nama', '<>', ''],
+			    ['telepon', '<>', ''],
+		    ])
 		    ->groupBy('nama')
+		    ->orderBy('nama', 'asc')
 		    ->get();
 	    return $data;
     }
