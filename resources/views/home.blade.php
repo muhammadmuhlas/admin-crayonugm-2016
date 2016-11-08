@@ -18,6 +18,7 @@
                 <header class="major">
                     <h2>Selamat Datang</h2>
                     Data Pendaftar tersedia disini<br> <b>Data yang ditampilkan berikut menggunakan opsi tambahan yaitu "WHERE nama !="" AND WHERE telepon != ""</b>
+                    </br>
                     Dikarenakan banyaknya junk data.
                     </p>
                 </header>
