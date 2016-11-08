@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
+
+Auth::routes();
+Route::any('/logout', function (){
+	
+	Auth::logout();
+	return redirect('/');
+	
+});
+Route::get('/home', 'HomeController@index')->middleware('auth');
