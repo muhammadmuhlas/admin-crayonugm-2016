@@ -9,7 +9,7 @@ class Pendaftar extends Model
 {
     public function getAllPendaftar(){
     	
-    	$data = DB::table('uwitan.mitras')->get();
+    	$data = DB::table('crayonugm.pendaftar')->get();
 	    return $data;
     }
 }
