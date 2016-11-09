@@ -63,10 +63,10 @@
                                         <td>{{$pendaftar->created_at}}</td>
                                         <td>
                                             @if($pendaftar->bayar == "N")
-                                                <a href="/activate-bayar{{$pendaftar->id}}">
+                                                <a class="button" href="/activate-bayar/{{$pendaftar->id}}"></a>
                                             @endif
                                             @if($pendaftar->bayar == "Y")
-                                                <a href="/deactivate-bayar{{$pendaftar->id}}">
+                                                <a class="button" href="/deactivate-bayar/{{$pendaftar->id}}"></a>
                                             @endif
                                         </td>
                                     </tr>

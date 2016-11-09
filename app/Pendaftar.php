@@ -29,7 +29,7 @@ class Pendaftar extends Model
 		    ]);
     }
 	
-	public function deacivateBayar($id){
+	public function deactivateBayar($id){
 		
 		DB::table('crayonugm.pendaftar')
 			->where('id', $id)
