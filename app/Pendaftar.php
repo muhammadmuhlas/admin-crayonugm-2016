@@ -16,7 +16,6 @@ class Pendaftar extends Model
 			    ['telepon', '<>', ''],
 		    ])
 		    ->orderBy('created_at', 'asc')
-		    ->groupBy('telepon')
 		    ->get();
 	    return $data;
     }
