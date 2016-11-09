@@ -23,3 +23,5 @@ Route::any('/logout', function (){
 	
 });
 Route::get('/home', 'HomeController@index')->middleware('auth');
+Route::get('/activate-bayar/{id}', 'HomeController@activateBayar')->middleware('auth');
+Route::get('/deactivate-bayar/{id}', 'HomeController@deactivateBayar')->middleware('auth');

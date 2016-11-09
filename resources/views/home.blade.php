@@ -61,6 +61,14 @@
                                         <td>{{$pendaftar->alamat}}</td>
                                         <td>{{$pendaftar->kategori}}</td>
                                         <td>{{$pendaftar->created_at}}</td>
+                                        <td>
+                                            @if($pendaftar->bayar == "N")
+                                                <a href="/activate-bayar{{$pendaftar->id}}">
+                                            @endif
+                                            @if($pendaftar->bayar == "Y")
+                                                <a href="/deactivate-bayar{{$pendaftar->id}}">
+                                            @endif
+                                        </td>
                                     </tr>
                                 @endforeach
                                 </tbody>

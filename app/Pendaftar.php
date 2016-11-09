@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class Pendaftar extends Model
@@ -18,4 +19,22 @@ class Pendaftar extends Model
 		    ->get();
 	    return $data;
     }
+    
+    public function activateBayar($id){
+	    
+    	DB::table('crayonugm.pendaftar')
+		    ->where('id', $id)
+		    ->update([
+		        'bayar' => 'Y'
+		    ]);
+    }
+	
+	public function deacivateBayar($id){
+		
+		DB::table('crayonugm.pendaftar')
+			->where('id', $id)
+			->update([
+				'bayar' => 'N'
+			]);
+	}
 }
