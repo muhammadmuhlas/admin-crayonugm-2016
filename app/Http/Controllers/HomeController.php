@@ -33,7 +33,7 @@ class HomeController extends Controller
     	
     	$pendaftar = new Pendaftar();
 	    $pendaftar->activateBayar($id);
-	    back();
+	    return back();
     	
     }
     
@@ -41,6 +41,6 @@ class HomeController extends Controller
 		
 		$pendaftar = new Pendaftar();
 		$pendaftar->deactivateBayar($id);
-		back();
+		return back();
 	}
 }
