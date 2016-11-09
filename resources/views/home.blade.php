@@ -45,7 +45,7 @@
                                 </thead>
                                 <tbody>
                                 @foreach($data_pendaftar as $pendaftar)
-                                    <tr>
+                                    <tr @if($pendaftar->bayar == "N")style="background: #FFC0CB;" @endif>
                                         <td>{{$pendaftar->nama}}</td>
                                         <td>
                                             @if($pendaftar->kelamin == "1")
@@ -63,10 +63,10 @@
                                         <td>{{$pendaftar->created_at}}</td>
                                         <td>
                                             @if($pendaftar->bayar == "N")
-                                                <a class="button" href="/activate-bayar/{{$pendaftar->id}}"></a>
+                                                <a href="/activate-bayar/{{$pendaftar->id}}">Confirm</a>
                                             @endif
                                             @if($pendaftar->bayar == "Y")
-                                                <a class="button" href="/deactivate-bayar/{{$pendaftar->id}}"></a>
+                                                <a href="/deactivate-bayar/{{$pendaftar->id}}" style="">UnConfirm</a>
                                             @endif
                                         </td>
                                     </tr>
