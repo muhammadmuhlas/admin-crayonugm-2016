@@ -33,14 +33,15 @@
                             <table class="alt">
                                 <thead>
                                     <tr>
-                                        <td>nama</td>
-                                        <td>kelamin</td>
-                                        <td>umur</td>
-                                        <td>telepon</td>
-                                        <td>sekolah</td>
-                                        <td>alamat</td>
-                                        <td>kategori</td>
-                                        <td>created at</td>
+                                        <td>Nama</td>
+                                        <td>Kealmin</td>
+                                        <td>Umur</td>
+                                        <td>Telepon</td>
+                                        <td>Sekolah</td>
+                                        <td>Alamat</td>
+                                        <td>Kategori</td>
+                                        <td>Tanggal Registrasi</td>
+                                        <td>Konfirmasi</td>
                                     </tr>
                                 </thead>
                                 <tbody>

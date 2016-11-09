@@ -15,7 +15,7 @@ class Pendaftar extends Model
 			    ['nama', '<>', ''],
 			    ['telepon', '<>', ''],
 		    ])
-		    ->orderBy('nama', 'asc')
+		    ->orderBy('created_at', 'asc')
 		    ->get();
 	    return $data;
     }
