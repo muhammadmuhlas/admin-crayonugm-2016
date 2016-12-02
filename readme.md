@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/muhammadmuhlas/admin-crayonugm-2016.png?label=ready&title=Ready)](https://waffle.io/muhammadmuhlas/admin-crayonugm-2016)
 <p align="center"><a href="https://laravel.com" target="_blank"><img width="150"src="https://laravel.com/laravel.png"></a></p>
 
 <p align="center">
